@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+  
+   
 
 ]
 
@@ -127,5 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-   
+
 ]
+
+MEDIA_URL = '/mymedia/'
+MEDIA_ROOT = BASE_DIR/ 'media'

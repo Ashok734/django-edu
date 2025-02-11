@@ -8,7 +8,10 @@
     margin-top: 60px;
 }
 
-
+#services-wrapper .card img {
+    height: 200px;
+    width: 100%;
+}
     #services-wrapper .head-title {
         text-align: center;
         padding-left: 200px;

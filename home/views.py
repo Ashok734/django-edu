@@ -1,22 +1,13 @@
-from django.shortcuts import render, HttpResponse
-from .models import Services
+from django.shortcuts import render
+from .models import Service
 # Create your views here.
-def django_home(request):
-    sevices = Services.objects.all()
+def home_page(request):
+
+    ashok = Service.objects.all()
 
     context = {
-        'sevices': sevices,
+        'ashok': ashok,
 
     }
-    return render (request, "home.html", context)
 
-
-
-# def django_about(request):
-#     return HttpResponse ("about pages")
-
-
-# def services(request):
-#     return HttpResponse ("services pages")
-
-   
+    return render(request, "home.html", context)
