@@ -1,0 +1,19 @@
+<!doctype html>
+  <head>
+    {% load static %}
+     <link rel="stylesheet" href="{% static "css/mainstyle.css" %}">
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <title>Blog web templates</title>
+  </head>
+  <body>
+   
+     {% include "navbar.html" %}
+    {% block body %}
+    
+    {% endblock body %}
+    {% include "footer.html" %}
+
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+</body>
+</html>
+

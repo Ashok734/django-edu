@@ -11,3 +11,8 @@ def home_page(request):
     }
 
     return render(request, "home.html", context)
+
+
+def about_page(request):
+    return render(request, "about.html")
+    
